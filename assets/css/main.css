@@ -1,0 +1,112 @@
+:root{
+    font-family: "Open Sans", sans-serif;
+    --primary-color-azul-void: #01080E;
+    --gradiant-color1: #072041;
+    --gradiant-color2: #041833;
+    --gradiant-color3: #154580;
+    --primary-color-azul-neon: #2BDEFD;
+    --primary-color-branco: #FFFFFF;
+    --primary-color-azul-escuro: #041832;
+}
+
+.grid-container{
+    display: grid;
+
+    grid-template-columns: 228px 1fr;
+}
+
+.sidebar{
+    height: 100vh;
+    background-color: var(--primary-color-azul-void);
+    display: flex;
+    flex-direction: column;
+    gap:48px;
+    padding: 40px 23.5px;
+}
+
+.pages ul{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    font-size: 16px;
+}
+
+.pages ul li a{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    color: var(--primary-color-branco);
+}
+
+.pages ul li a img{
+    padding: 3px 0;
+}
+
+#home{
+    padding: 10px 0;
+    font-weight: 700;
+    color: var(--primary-color-azul-neon);
+}
+
+.playlists{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.playlists h2{
+    color: var(--primary-color-branco);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.playlists ul{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-size: 16px;
+}
+
+.playlists ul li a{
+    display: flex;
+    gap: 16px;
+    color: var(--primary-color-branco);
+    align-items: center;
+}
+
+.playlists ul li a img{
+    padding: 5px 0;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .grid-container{
+        grid-template-columns: 208px 1fr;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+    .sidebar{
+        display: none;
+    }
+}
+
+ /*
+ -------------------------------------------
+ */
+
+.main{
+    height: 100vh;
+    background:  linear-gradient(60deg,var(--gradiant-color1) 0%, 
+    var(--gradiant-color2) 50%, 
+    var(--gradiant-color3) 100%);
+}
+
+.soundtrack{
+    background-color: var(--primary-color-azul-escuro);
+    border-radius: 4px;
+}
