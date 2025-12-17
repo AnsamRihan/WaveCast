@@ -15,6 +15,8 @@
     grid-template-columns: 228px 1fr;
 }
 
+/*Start SideBar*/
+
 .sidebar{
     height: 100vh;
     background-color: var(--primary-color-azul-void);
@@ -95,9 +97,8 @@
     }
 }
 
- /*
- -------------------------------------------
- */
+
+ /*Start Main*/
 
 .main{
     height: 100vh;
@@ -105,6 +106,29 @@
     var(--gradiant-color2) 50%, 
     var(--gradiant-color3) 100%);
 }
+
+/*Main: 1) Navigation Controls*/
+
+.main .nav-controls{
+    margin: 40px 0;
+    display: flex;
+    gap: 24px;
+}
+
+
+.main .nav-controls a{
+    display: flex;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--primary-color-azul-void);
+    border-radius: 50%;
+}
+
+
+/*Start SoundTrack*/
 
 .soundtrack{
     background-color: var(--primary-color-azul-escuro);
